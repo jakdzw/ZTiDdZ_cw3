@@ -1,1 +1,5 @@
+import base64
 
+kodowanie = input("Podaj znaki do szyfru: ")
+zakodowany = base64.b64encode(kodowanie.encode())
+print("Twoj szyfr to: ", zakodowany.decode())
